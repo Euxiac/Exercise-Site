@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Exercise3_style.css">
+
+<title>Module 1 Exercise 3</title>
+
+<style>
+    body { font-family: sans-serif; margin:0; }
+    .container { display: flex; min-height:
+    100vh; align-items: stretch; }
+    .column { background: goldenrod; display:
+    flex; flex-direction: column; justify-content:
+    center; align-items: center; flex:1; }
+    button {
+        margin: 12px;
+
+    }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="column" id="column1">
+        <h1 id="heading1">Hello</h1>
+        <label for="textInputLeft" class="form-label">Input text to change heading!</label>
+        <input type="text" class="form-control" id="textInputLeft" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Circle-icons-tools.svg/2048px-Circle-icons-tools.svg.png" alt="image "width="128" height="128">
+        <button id="leftButton" onclick="function1()">Change me</button>
+
+    </div>
+    <div class="column" id="column2">
+        <h1 id="heading2">World</h1>
+            <label for="textInputRight" class="form-label">Input text to change heading!</label>
+            <input type="text" class="form-control" id="textInputRight" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Circle-icons-tools.svg/2048px-Circle-icons-tools.svg.png" alt="image "width="128" height="128">
+        <button type="rightButton" onclick="function2()">Change me</button>
+    </div>
+</div>
+<script src="./Exercise3_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+button {
+    background-color: rgb(100, 89, 89);
+    color: aliceblue;
+    border-style:dashed;
+    border-color: aliceblue;
+    padding: 6px;
+}
