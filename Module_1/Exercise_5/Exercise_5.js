@@ -11,7 +11,7 @@ breakpoint on the first line. Step through your code line by line to
 watch how it executes.*/
 
 
-let favouriteFoods = ["Icecream", "Jelly", "Waffles", "Fried Chicken", "Rice"]
+let favouriteFoods = ["Icecream", "Jelly", "Waffles", "Fried Chicken", "Rice"];
 
 function replaceEntry (array, index, newEntry)
 {
@@ -33,6 +33,11 @@ function addEntryToTop (array, newEntry)
     array.unshift(newEntry);
 }
 
+function deleteEntry(array, indexToDelete)
+{
+    array.splice(indexToDelete, 1);
+}
+
 console.log(favouriteFoods);
 
 replaceEntry(favouriteFoods, 0, "Milkshake");
@@ -49,5 +54,9 @@ deleteFirstEntry(favouriteFoods);
 console.log(favouriteFoods);
 
 deleteLastEntry(favouriteFoods);
+
+console.log(favouriteFoods);
+
+deleteEntry(favouriteFoods,0);
 
 console.log(favouriteFoods);

@@ -44,3 +44,6 @@ console.log(a + "-" + b + "="+ divide(a,b));
 console.log(a + "-" + b + "="+ multiply(a,b));
 hello(name);
 
+module.exports={
+  subtract, add, divide, multiply, hello
+}
