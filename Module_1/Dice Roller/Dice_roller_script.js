@@ -1,1 +1,0 @@
-//document.getElementById("D4").children[1].textContent = "test"; //test getting the text inside the svg
