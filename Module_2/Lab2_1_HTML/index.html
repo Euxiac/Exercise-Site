@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>Lab 2.1 Index</title>
+<meta charset="utf-8" />
+<meta name="description" content="test description" />
+<meta name="keywords" content="test, lab" />
+<meta name="author" content="Christie" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+  <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="./index.html">Home</a>
+      <a href="./form.html">Form</a>
+    </nav>
+  </header>
+
+  <h1>My HTML learning journey</h1>
+
+  <article>
+    <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div> <!--block-->
+    <span>SpanHTML</span><span>SpanCSS</span><span>SpanJS</span> <!--inline-->
+
+    <p>
+      p represents paragraph without preserving spacing
+    </p>
+    <pre>
+      Text in         a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks
+  </pre>
+
+    <ul>
+      <li>Bread</li>
+      <li>Bread</li>
+      <li>Bread</li>
+      <ul>
+        <li>Cheese</li>
+        <li>Ham</li>
+      </ul>
+
+    </ul>
+    <ol>
+      <li>Bread</li>
+      <li>Bread</li>
+      <li>Bread</li>
+    </ol>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+  </article>
+
+  <article>
+    <h2>Leaning Tables</h2>
+  <table>
+    <thead>
+    <tr>
+        <th>First header</th>
+        <th>Second header</th>
+        <th>Third header</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First cell - first row</td>
+            <td>Second cell - first row</td>
+            <td>Third cell - first row</td>
+        </tr>
+        <tr>
+          <td>First cell - second row</td>
+          <td rowspan="2">Second cell - second row</td>
+          <td>Third cell - second row</td>
+        </tr>
+        <tr>
+          <td>First cell - third row</td>
+          <td>Second cell - third row</td>
+        </tr>
+    </tbody>
+</table>
+  </article>
+
+  <article>
+    <h2>Learning Media</h2>
+    <img src="https://picsum.photos/400/400" alt="an image that changes when you refresh the page" style="width:100px;height:100px;"/>
+    <img src="./assets/html_lab_image.jpg" alt="an image for the lab" style="width:100px;height:100px;"/>
+    <video width="250" autoplay muted>
+      <source src="/assets/flower.webm" type="video/webm">
+      Sorry, your browser doesn't support embedded videos.
+  </video>
+  <audio src="/assets/t-rex-roar.mp3" autoplay>
+    Your browser does not support the <code>audio</code> element.
+</audio>
+
+    
+  </article>
+
+  <main>
+  </main>/
+
+  <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>
