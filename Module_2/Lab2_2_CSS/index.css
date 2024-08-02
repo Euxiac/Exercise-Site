@@ -1,0 +1,138 @@
+/* I. Selectors */
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+.style-me1 {
+    color: red;
+}
+
+#style-me2{
+    color: blue;
+}
+
+/* no space in class name for both*/
+#style-me2.style-me1{
+    color: purple;
+}
+
+
+/* Put styles for questions 2.1 and 2.2 here */
+/* descendants are various children and grandchildren */
+.my-descendants-are-styled p {
+    background-color: red;
+}
+
+/* children are directly underneath the parentk */
+.my-children-are-styled > p{
+       background-color: lightgreen;
+}
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+.box {
+    background-color: blueviolet;
+    margin: 40px 10px 40px 10px;
+    padding: 24px 10px;
+    width: 200px;
+    height: 100px !important;
+    overflow: hidden;
+    outline-style: solid;
+    outline-width: 10px;
+    background-image: url("./assets/images/img1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+.position-absolute {
+    position: absolute;
+    top: 0px;
+    background-color: aqua;
+    left: 20px;
+}
+
+.position-sticky {
+    position: sticky;
+    background-color: coral;
+    top: 0px;
+}
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+
+.text-style {
+    color: green;
+    font-size: x-small;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: Tangerine;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-align: right;
+    letter-spacing:2px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-decoration: dashed;
+}
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+a, a:link {
+    color: aqua;
+    font-size: large;
+    font-weight:400;
+    text-decoration: line-through;
+}
+
+a:hover { 
+    color: blue;
+    font-size: large;
+    font-weight:800;
+    text-decoration: underline;
+}
+
+a:active {
+    color: blueviolet;
+    font-size: large;
+    font-weight:400;
+    text-decoration:overline;
+}
+
+a:focus{
+    color: red;
+    font-size: large;
+    font-weight:800;
+    text-decoration:double;
+}
+
+a:visited {
+    color: bisque;
+    font-style: italic;
+}
+
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+.calc-style {
+    width: 100vw;
+    background-color: cornflowerblue;
+    width: calc(100vm - 100px);
+}
+
+
+:root {
+    --testwidth: 350px;
+}
+.fixed-width-col{
+    width: var(--testwidth);
+    display: inline-block;
+}
+
+.fluid-col
+{
+    display: inline-block;
+    width: calc(90vw - var(--testwidth));
+}
