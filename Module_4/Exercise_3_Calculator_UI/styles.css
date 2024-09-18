@@ -1,0 +1,124 @@
+body{
+    background-color: bisque;
+
+    @media screen and (max-width: 500px) {
+        background-color: whitesmoke;
+    }
+}
+
+.calculator {
+    width: 268px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    padding: 16px;
+    margin: 64px auto;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    filter: drop-shadow(grey 8px 8px);
+
+    @media screen and (max-width: 500px) {
+        width: auto;
+        border-style: none;
+        margin: 0px;
+        border-radius: 0PX;
+        filter: none;
+    }
+}
+
+.indent{
+    border-style: groove;
+    border-radius: 24px;
+    padding: 12px;
+    margin-bottom: 4px;
+}
+
+.screen{
+    background-color: grey;
+    border-style: inset;
+    border-radius: 14px;
+    padding: 12px;
+    
+}
+
+.screentext{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.keypad{
+    .row{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 8px;
+    }
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.calc-button{
+    width: 54px;
+    height: 54px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100%;
+    border-color: grey;
+
+    @media screen and (max-width: 500px) {
+        width: 64px;
+        height: 64px;
+    }
+
+    @media screen and (max-width: 300px) {
+        width: 34px;
+        height: 34px;
+    }
+
+}
+
+.calc-button:hover{
+    border-width: 4px;
+    border-style: outset;
+    border-width: 2px;
+    filter: drop-shadow(grey 2px 2px);
+}
+
+.row-1{
+    background-color: #F9D2E5;
+}
+
+.row-2{
+    background-color: #FBF2CB;
+}
+
+.row-3{
+    background-color: #C2DDB4;
+}
+
+.row-4{
+    background-color: #DDC8F6;
+}
+
+.functions{
+    background-color: #D4E8FF;
+}
+
+.branding{
+    text-align: center;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+
+.no-margins{
+    margin: 0px;
+}
+
+.no-padding{
+    padding: 0px;
+}
