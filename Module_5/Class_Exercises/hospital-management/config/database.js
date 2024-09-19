@@ -6,10 +6,10 @@ const { Sequelize } = require("sequelize");
 //   dialect: "mysql",
 // });
 
+//Sequelize is a third party service, there are other options.
 const sequelize = new Sequelize("hospital", "root", "29121995", {
   host: "localhost",
   dialect: "mysql",
 });
-
 
 module.exports = sequelize;

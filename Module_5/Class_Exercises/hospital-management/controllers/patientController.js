@@ -6,3 +6,4 @@ export const fetchPatientsWithoutRecentAppointments = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+//doors / phones to the backend. front end talks to backend using a controller.

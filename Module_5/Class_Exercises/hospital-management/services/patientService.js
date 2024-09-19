@@ -18,3 +18,7 @@ export const getPatientsWithoutRecentAppointments = async () => {
     );
   }
 };
+
+//any part of the code that talks to something external to the backend
+//this is where youd want to put anything that gets patient information from the database
+//things tht have to do with patients
