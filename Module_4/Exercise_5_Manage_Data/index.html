@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <template id="newCards">
+    <template id="news-card-template">
         <div class="col-md-6 col-lg-4 mt-2 mb-2">
             <div class="card" id="card-3">
                 <div class="card-body">
@@ -22,38 +22,11 @@
     </template>
 
     <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-6 col-lg-4 mt-2 mb-2">
-                <div class="card" id="card-1">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-2 mb-2">
-                <div class="card" id="card-2">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-2 mb-2">
-                <div class="card" id="card-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Read More</a>
-                    </div>
-                </div>
-            </div>
+        <div class="row" id="card-list">
         </div>
     </div>
     <div class="container mt-4">
-        <form>
+        <form id="newNewsForm">
             <div class="form-group">
                 <label for="InputNewsTitle">News Title</label>
                 <input type="newsTitle" class="form-control" id="InputNewsTitle" placeholder="News headline here">

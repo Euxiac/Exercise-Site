@@ -7,15 +7,9 @@ let news = [
     content: "Residents should prepare..." }
     ];
 
-updateAllCards();
-setInterval(updateAllCards, 5000);
+generateCardsFromArray();
+setInterval(generateCardsFromArray, 5000);
 
-function updateAllCards(){
-    //console.log('test');
-    updateNewsCard(document.getElementById('card-1').children[0], 0);
-    updateNewsCard(document.getElementById('card-2').children[0], 1);
-    updateNewsCard(document.getElementById('card-3').children[0], 2);
-}
 
 function updateNewsCard(card, entry){
     for (const child of card.children) {
@@ -31,6 +25,23 @@ function updateNewsCard(card, entry){
 }
 
 function addNewsEntry(){
-    news.push({id: news.length, title: document.getElementById('InputNewsTitle').value,
-        content: document.getElementById('InputNewsContent').value});
+    let title = document.getElementById('InputNewsTitle');
+    let content = document.getElementById('InputNewsContent');
+    news.push({id: news.length, title: title.value,content: content.value});
+    document.getElementById('newNewsForm').reset();
+    
+}
+
+function generateCard(title, content){
+    const template = document.getElementById("news-card-template").content.cloneNode(true);
+    template.querySelector('.card-title').innerText = title;
+    template.querySelector('.card-text').innerText = content;
+    document.querySelector('#card-list').appendChild(template);
+}
+
+function generateCardsFromArray(){
+    document.querySelector('#card-list').replaceChildren();;
+    for (let index = 0; index < news.length; index++) {
+        generateCard(news[index].title, news[index].content);
+    }
 }
