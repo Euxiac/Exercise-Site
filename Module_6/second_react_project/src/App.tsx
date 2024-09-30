@@ -5,18 +5,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 const Calculator  = (a, b, operator) => {
-if (operator === '%') {
-     return Number(a) / Number(b);
-  }
-  else if (operator === 'x'){
-      return Number(a) * Number(b);
-  }
-  else if (operator === '-'){
-      return Number(a) - Number(b);
-  }
-  else if (operator === '+'){
-      return Number(a) + Number(b);
-  }
 }
 
 function App() {
@@ -25,7 +13,7 @@ function App() {
   return (
     <>
       <div>
-        <Calculator/>
+        <p>test</p>
       </div>
     </>
   )
