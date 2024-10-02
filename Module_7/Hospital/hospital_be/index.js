@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require("body-parser");
-const sequelize = require("./config/database");
+const sequelize = require("./config/database.js");
+const patientRoutes  = require("./routes/patientRoutes.js");
+
 
 // Initialize the app
 const app = express();
@@ -21,21 +23,8 @@ app.use((req, res, next) => {
   next();
 });
 
-//ideally line 14-26 should be seperated into controllers/routes and services
-// Define raw SQL queries
-const queries = {
-  getAllPatients: "SELECT * FROM Patients",
-};
-
-//endpoints
-app.get("/patients", async (req, res) => {
-  try {
-    const [results] = await sequelize.query(queries.getAllPatients);
-    res.json(results);
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
+// Define the routes
+app.use("/api", patientRoutes);
 
 // Sync the database and start the server
 sequelize
@@ -43,7 +32,7 @@ sequelize
   .then(() => {
 
     app.get('/', (req, res) => {
-      res.send('Server Running');
+      res.send(`Server Running on http://localhost:${port}`);
     });
 
     app.listen(port, () => {
