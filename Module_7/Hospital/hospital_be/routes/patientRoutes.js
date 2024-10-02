@@ -4,8 +4,8 @@ const { fetchPatientsWithoutRecentAppointments, fetchAllPatients, createPatient 
 const router = Router();
 
 // Route to get patients without recent appointments
-router.get("/patients", fetchAllPatients);
+router.get("/", fetchAllPatients);
 router.get("/patients-no-appointments", fetchPatientsWithoutRecentAppointments);
-router.post('/patients', createPatient);
+router.post('/', createPatient);
 
 module.exports = router;

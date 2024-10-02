@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require("body-parser");
 const sequelize = require("./config/database.js");
 const patientRoutes  = require("./routes/patientRoutes.js");
-
+const doctorRoutes  = require("./routes/doctorRoutes.js");
 
 // Initialize the app
 const app = express();
@@ -24,7 +24,8 @@ app.use((req, res, next) => {
 });
 
 // Define the routes
-app.use("/api", patientRoutes);
+app.use("/api/patients", patientRoutes);
+app.use("/api/doctors", doctorRoutes);
 
 // Sync the database and start the server
 sequelize
