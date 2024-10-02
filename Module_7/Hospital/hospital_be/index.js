@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.json()); // To parse JSON request body
 
 // Allow all origins or specify domain
-//this bit is about bypassing the CORS policy. see enable-cors.org
+// this bit is about bypassing the CORS policy for local connections. see enable-cors.org
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
